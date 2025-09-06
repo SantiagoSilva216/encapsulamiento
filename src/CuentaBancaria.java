@@ -4,6 +4,7 @@ public class CuentaBancaria {
     public CuentaBancaria() {
         this.saldo = 0.0;
     }
+
     public void depositar(double cantidad) {
         if (cantidad > 0) {
             saldo += cantidad;
@@ -29,12 +30,4 @@ public class CuentaBancaria {
     public double getSaldo() {
         return saldo;
     }
-
-    public static void main(String[] args) {
-        CuentaBancaria cuenta = new CuentaBancaria();
-        cuenta.depositar(500);
-        cuenta.retirar(200);
-        System.out.println("Saldo: " + cuenta.getSaldo());
-    }
 }
-
